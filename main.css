@@ -9,4 +9,21 @@ body * {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: papayawhip;
+    padding: 2rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    margin: 2rem 0;
+    font-size: 1.3rem;
 }
