@@ -2,10 +2,10 @@
 
 const formDOM = document.getElementsByTagName('form')[0];
 
-formDOM.innerHTML = '<button type="button">Click me</button>';
+//formDOM.innerHTML = '<button type="button">Click me</button>';
 
 contentDOM = document.getElementById('content');
-ulDOM = contentDOM.querySelector('.products-list');
+//ulDOM = contentDOM.querySelector('.products-list');
 
 const products = [
     {
@@ -36,4 +36,17 @@ for (let i = 0; i < products.length; i++) {
     </li>`;
 }
 
-ulDOM.innerHTML = HTML;
+//ulDOM.innerHTML = HTML;
+
+//const formDOM = document.getElementsByTagName('form')[0];
+
+//formDOM.innerHTML = '<button type="button">Click me</button>' + formDOM.innerHTML;
+
+formDOM.innerHTML += '<button type="button">Click me</button>';
+
+const redElementsDOM = document.querySelectorAll('.red');
+
+for (const redDOM of redElementsDOM) {
+    redDOM.style.backgroundColor = 'red';
+    redDOM.style.fontSize = '2rem';
+}
