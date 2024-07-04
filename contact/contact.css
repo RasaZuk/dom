@@ -26,17 +26,23 @@ footer {
 nav {
     display: flex;
     gap: 2rem;
+    align-items: center;
     font-size: 1.5rem;
 }
 
 
 nav > .link {
+    padding: 0.3rem 1rem;
     text-decoration: none;
     color: #36f;
+    border-bottom: 0.2rem solid transparent;
 }
 
-
-
 nav > .link:hover {
-    border-bottom: 0.2rem solid #36f ;
+    border-bottom-color: 0.2rem solid #36f;
+}
+
+nav> .link.active {
+    background-color: #36f;
+    color: white;
 }

@@ -30,11 +30,13 @@ const mainLinksData = [
 ];
 
 let navHTML = '';
+
 for (const linkData of mainLinksData) {
-    navHTML += `<a class="link" href="${linkData.link}">${linkData.text}</a>`;
+    if (linkData.text === 'Contact') {
+        navHTML += `<a class="link active" href="${linkData.link}">${linkData.text}</a>`;
+    } else {
+        navHTML += `<a class="link" href="${linkData.link}">${linkData.text}</a>`;
+    }
 }
 
-navDOM.innerHTML = `<a href="../">Home</a>
-<a href="../>about-us/">About</a>
-<a href="../>products/">Products</a>
-<a href="../>contact/">Contact</a>`;
+navDOM.innerHTML = navHTML;
