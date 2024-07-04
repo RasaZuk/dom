@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 13px;
+}
+
+main article {
+    border: 2px solid pink;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+main article p {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+main img {
+    width: 150px;
+    height: 150px;
+    padding-left: 50px;
+}
+
+main article a {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
